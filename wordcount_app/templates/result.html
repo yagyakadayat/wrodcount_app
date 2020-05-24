@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>resultpage</title>
+</head>
+<body>
+<h1>Hello this is my return response page</h1>
+<h3>Hello this is result</h3>
+
+{{age}}
+<br>
+
+<h4>This article has {{ word_count }} words</h4>
+<h3>PROGRAMMING</h3>
+{{article}}
+<h3>Total count</h3>
+{% for word , num in dict_words %}
+<h4>{{word}} : {{num}}</h4>
+{%endfor%}
+
+
+<br>
+<br>
+<br>
+<a href="{% url 'home' %}">return to home</a>
+<br>
+
+</body>
+</html>
